@@ -1,5 +1,9 @@
 # COMP6411B-LIFT-SLAM
 -----------------------------------
+### Directory
+- KITTI : ```~/Documents/COMP6411B/KITTI```
+- GITHUB: ```~/Documents/GITHUB```
+-----------------------------------
 ### Anydesk
 - This Desk : 597970881
 - Password : comp6411b
