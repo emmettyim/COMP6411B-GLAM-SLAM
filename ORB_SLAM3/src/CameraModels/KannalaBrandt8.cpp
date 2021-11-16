@@ -20,6 +20,14 @@
 
 #include <boost/serialization/export.hpp>
 
+namespace cv{
+    template<typename _Tp, int m, int n> static inline
+    Matx<_Tp, m ,n> operator / (const Matx<_Tp, m, n> &a, float alpha)
+    {
+        return Matx<_Tp, m, n>(a, 1.f / alpha, Matx_ScaleOp());
+    }
+}
+
 namespace ORB_SLAM3 {
 
     cv::Point2f KannalaBrandt8::project(const cv::Point3f &p3D) {
