@@ -10,6 +10,23 @@ Execute the following command. Change KITTIX.yaml by KITTI00-02.yaml, KITTI03.ya
 ./Examples/Monocular/mono_kitti Vocabulary/ORBvoc.txt Examples/Monocular/KITTIX.yaml PATH_TO_DATASET_FOLDER/dataset/sequences/SEQUENCE_NUMBER
 ```
 
+### Evaluate with evo
+First, move generated trajectory from ORB-SLAM/LIFT-SLAM to evo/project_eva,
+change the KITTI groundtruth to TUM format together with corresponding timestamp with evo contri script **kitti_poses_and_timestamps_to_trajectory.py** 
+```
+./kitti_poses_and_timestamps_to_trajectory.py ../project_eva/(input_groundtruth).txt ../project_eva/(groundtruth_timestamp).txt ../project_eva/(output_groundtruth).txt
+```
+Evaluate with evo using TUM evaluation
+```
+evo_ape tum (output_groundtruth).txt (SLAM_output).txt -va --plot -plot_mode xz --align --correct_scale --save_results results/00_ORB.zip
+```
+For multiple trajectories:
+````
+evo_traj tum (SLAM_output1).txt (SLAM_output2).txt --ref=(output_groundtruth).txt -p --plot_mode=xz --align --correct_scale
+```
+See evo Github for more
+[evaluation of odometry and SLAM](https://github.com/MichaelGrupp/evo)
+
 ### V0.4: Beta version, 21 April 2021
 **Authors:** Carlos Campos, Richard Elvira, Juan J. Gómez Rodríguez, [José M. M. Montiel](http://webdiis.unizar.es/~josemari/), [Juan D. Tardos](http://webdiis.unizar.es/~jdtardos/).
 
