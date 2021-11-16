@@ -21,7 +21,7 @@ Evaluate with evo using TUM evaluation
 evo_ape tum (output_groundtruth).txt (SLAM_output).txt -va --plot -plot_mode xz --align --correct_scale --save_results results/00_ORB.zip
 ```
 For multiple trajectories:
-````
+```
 evo_traj tum (SLAM_output1).txt (SLAM_output2).txt --ref=(output_groundtruth).txt -p --plot_mode=xz --align --correct_scale
 ```
 See evo Github for more
