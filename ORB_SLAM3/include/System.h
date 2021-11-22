@@ -26,6 +26,7 @@
 #include<string>
 #include<thread>
 #include<opencv2/core/core.hpp>
+#include <torch/script.h>
 
 #include "Tracking.h"
 #include "FrameDrawer.h"
@@ -38,6 +39,7 @@
 #include "Viewer.h"
 #include "ImuTypes.h"
 #include "Config.h"
+#include "GLAMpoints.h"
 
 
 namespace ORB_SLAM3
@@ -56,6 +58,8 @@ public:
     };
 
     static eLevel th;
+    
+    
 
 public:
     static void PrintMess(std::string str, eLevel lev)
@@ -76,6 +80,7 @@ class Atlas;
 class Tracking;
 class LocalMapping;
 class LoopClosing;
+class GLAMpoints;
 
 class System
 {
@@ -95,7 +100,13 @@ public:
         BINARY_FILE=1,
     };
 
+    //Model
+    torch::jit::script::Module module;
+
+
 public:
+
+    
 
     // Initialize the SLAM system. It launches the Local Mapping, Loop Closing and Viewer threads.
     System(const string &strVocFile, const string &strSettingsFile, const eSensor sensor, const bool bUseViewer = true, const int initFr = 0, const string &strSequence = std::string(), const string &strLoadingFile = std::string());

@@ -71,7 +71,14 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
        cerr << "Failed to open settings file at: " << strSettingsFile << endl;
        exit(-1);
     }
-
+    
+    try{
+        mdodule = torch::jit::load(..\modelpath);
+    }
+    catch(const c10::Error& e){
+        std::cerr << "error loading the model\n"
+    }
+    
     bool loadedAtlas = false;
 
     //----
