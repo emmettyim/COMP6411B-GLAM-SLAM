@@ -1,39 +1,52 @@
-#include <torch/script.h>
-#include <torch/torch.h>
-#include <vector>
+#include "torch/script.h"
+#include "torch/torch.h"
+
+#include <opencv2/highgui/highgui.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
+#include <opencv2/opencv.hpp>
+
 #include <iostream>
 #include <memory>
 
-#include "GLAMpoints.h"
-
-using namespace cv;
 using namespace std;
+using namespace cv;
 
-// should I use network or just use the results qaq cry
+cv::Mat torchTensortoCVMat(torch::Tensor& tensor){
+        //tensor = tensor.squeeze().detach();
+        //tensor = tensor.permute({1, 2, 0}).contiguous();
+        //tensor = tensor.mul(255).clamp(0, 255).to(torch::kU8);
+        //tensor = tensor.to(torch::kCPU);
+        int64_t height = tensor.size(0);
+        int64_t width = tensor.size(1);
+        cv::Mat mat = cv::Mat(cv::Size(width, height), CV_32S, tensor.data_ptr<uchar>());
+        return mat.clone();
 
-namespace ORB_SLAM3
-{
-//below should only run once -> import once in 
-/**    torch::jit::script::Module module;
-    try{
-        mdodule = torch::jit::load(..\modelpath);
+        /** or below
+         * tensor = tensor.to(torch::kCPU);
+         * cv::Mat mat(cv::Size(width,height), CV_32F, i_tensor.data_ptr());
+         * 
+         * return mat;
+         * 
+         **/
     }
-    catch(const c10::Error& e){
-        std::cerr << "error loading the model\n"
-    }**/
 
-int GLAMpoints::operate()( InputArray _image, vector<KeyPoint>&_keypoints, OOutputArray_descriptors, std::vector<int> &vLappingArea)
+int main()
 {
-    if(_image.empty())
-        return -1;
-    // get image and change it to tensor from opencv mat? treat it as input to model
 
-    
-}
-    void ComputeKeyPoints(InputArray _image,std::vector<std::vectoor<KeyPoint>> &_keypoints){
-        Mat image; //Gray scales
+    torch::jit::script::Module module;
+    try{
+        module = torch::jit::load("KITTI_00_gray.pt");
+    }
+    catch(const c10::Error&){
+        std::cerr << "error loading the model\n";
+        return -1;
+    }
+
+    model.to(at::kCPU);
+
+        Mat image = cv::imread("000000.png",0); //Gray scales
         Mat readImage = _image.getMat();
-        //cv::cvtColor(readImage, image, cv::COLOR_GRAY2RGB); //maybe not needed? try
+        //cv::cvtColor(readImage, image, cv::COLOR_BGA2GRAY); //maybe not needed? try
         assert(readImage.type() == CV_8UC1);
 
         //Preprocess
@@ -75,29 +88,7 @@ int GLAMpoints::operate()( InputArray _image, vector<KeyPoint>&_keypoints, OOutp
                         keypoint->pt = pt;
                         keypoint->size = 10;
                     }
-    }
-
-
-    cv::Mat torchTensortoCVMat(torch::Tensor& tensor){
-        //tensor = tensor.squeeze().detach();
-        //tensor = tensor.permute({1, 2, 0}).contiguous();
-        //tensor = tensor.mul(255).clamp(0, 255).to(torch::kU8);
-        //tensor = tensor.to(torch::kCPU);
-        int64_t height = tensor.size(0);
-        int64_t width = tensor.size(1);
-        cv::Mat mat = cv::Mat(cv::Size(width, height), CV_32S, tensor.data_ptr<uchar>());
-        return mat.clone();
-
-        /** or below
-         * tensor = tensor.to(torch::kCPU);
-         * cv::Mat mat(cv::Size(width,height), CV_32F, i_tensor.data_ptr());
-         * 
-         * return mat;
-         * 
-         **/
-    }
-
-} //namespace ORB_SLAM
-
-using namespace cv;
-using namespace std;
+        std::cout << _leypoints[1] << '\n';
+        
+    return 0;
+}
