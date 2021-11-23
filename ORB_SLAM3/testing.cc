@@ -12,7 +12,9 @@ using namespace std;
 using namespace cv;
 
 cv::Mat torchTensortoCVMat(torch::Tensor& tensor){
-        //tensor = tensor.squeeze().detach();
+    
+        tensor = tensor.to(torch::kCPU).squeeze();
+
         //tensor = tensor.permute({1, 2, 0}).contiguous();
         //tensor = tensor.mul(255).clamp(0, 255).to(torch::kU8);
         //tensor = tensor.to(torch::kCPU);
@@ -89,6 +91,6 @@ int main()
                         keypoint->size = 10;
                     }
         std::cout << _leypoints[1] << '\n';
-        
+
     return 0;
 }

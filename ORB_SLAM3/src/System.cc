@@ -72,8 +72,9 @@ System::System(const string &strVocFile, const string &strSettingsFile, const eS
        exit(-1);
     }
     
+    //change below to argv[4] and similar stuff later
     try{
-        mdodule = torch::jit::load(..\modelpath);
+        mdodule = torch::jit::load('/home/emmett/Documents/COMP6411B/GLAMpoints_KITTI/KITTI_00_gray/KITTI_00_gray.pt');
     }
     catch(const c10::Error& e){
         std::cerr << "error loading the model\n"
