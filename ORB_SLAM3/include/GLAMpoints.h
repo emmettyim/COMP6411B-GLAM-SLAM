@@ -32,8 +32,8 @@ public:
   protected:
 
     cv::Mat torchTensortoCVMat(torch::Tensor& tensor); 
-    void ComputeKeyPoints(std::vector<std::vectoor<KeyPoint>> &_keypoints);
+    void ComputeKeyPoints(std::vector<std::vectoor<KeyPoint> &_keypoints);
 
-}
+};
 } //namespace ORB_SLAM
 #endif
