@@ -27,6 +27,20 @@ This project aims at building a hybrid Visual SLAM system with GLAMpoints based 
 
 ----
 
+*GLAM-SLAM on KITTI-06 and KITTI-10*
+<p float="left">
+  <img width="386" alt="KITTI-06 ARE" src="https://user-images.githubusercontent.com/24664133/143469595-38591378-44e1-4b3a-907f-b0a3b542db96.png">
+  <img width="386" alt="KITTI-06 RPE" src="https://user-images.githubusercontent.com/24664133/143469602-4c461c97-a12b-45f5-9624-7abb39ac7fe2.png">
+  <img width="386" alt="KITTI-06 Tra" src="https://user-images.githubusercontent.com/24664133/143469606-df9196f6-a8dc-43c4-bb0c-e175c69d2eaf.png">
+
+  <img width="386" alt="KITTI-10 ARE" src="https://user-images.githubusercontent.com/24664133/143469613-67a37f83-7156-46b4-8ea0-2d605f58a7fb.png">
+  <img width="386" alt="KITTI-10 RPE" src="https://user-images.githubusercontent.com/24664133/143469617-17b34d9a-b1ac-4ebf-905c-2a113a600f92.png">
+  <img width="386" alt="KITTI-10 Tra" src="https://user-images.githubusercontent.com/24664133/143469620-90924728-9e19-4792-94c9-eb625f15c836.png">
+</p>
+
+----
+
+
 In order to compile the project, one will need to have build an environment for pySLAM to run, please follow the below instructions/refer to orginal repo (see reference belows:
 
 The framework has been developed and tested under **Ubuntu 18.04**.  
@@ -119,13 +133,6 @@ evo_traj tum (SLAM_output1).txt (SLAM_output2).txt --ref=(output_groundtruth).tx
 ```
 See evo Github for more
 [evaluation of odometry and SLAM](https://github.com/MichaelGrupp/evo)
-
-![06ARE](https://user-images.githubusercontent.com/24664133/143469595-38591378-44e1-4b3a-907f-b0a3b542db96.png)
-![06RPE](https://user-images.githubusercontent.com/24664133/143469602-4c461c97-a12b-45f5-9624-7abb39ac7fe2.png)
-![06Trajectory](https://user-images.githubusercontent.com/24664133/143469606-df9196f6-a8dc-43c4-bb0c-e175c69d2eaf.png)
-![10APE](https://user-images.githubusercontent.com/24664133/143469613-67a37f83-7156-46b4-8ea0-2d605f58a7fb.png)
-![10RPE](https://user-images.githubusercontent.com/24664133/143469617-17b34d9a-b1ac-4ebf-905c-2a113a600f92.png)
-![10Trajectory](https://user-images.githubusercontent.com/24664133/143469620-90924728-9e19-4792-94c9-eb625f15c836.png)
 
 
 ### Directory
