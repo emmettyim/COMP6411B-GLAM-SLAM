@@ -6,8 +6,12 @@ This project aims at building a hybrid Visual SLAM system with GLAMpoints based 
 
 Some results are illustrates below:
 
+![match](https://user-images.githubusercontent.com/17170219/143461341-49ee46f6-50d1-4fe6-a8e0-90a502e8b52b.png)
+*GLAMpoints matching with KITTI-00*
+
 <img width="386" alt="GLAM-SLAM1" src="https://user-images.githubusercontent.com/17170219/143460689-16814c8b-24eb-4d27-8dbe-a1311fd39acf.png">
-*Running GlAM-SLAM with KITTI06* 
+*Running GlAM-SLAM with KITTI-06* 
+
 
 In order to compile the project, one will need to have build an environment for pySLAM to run, please follow the below instructions/refer to orginal repo (see reference belows:
 
