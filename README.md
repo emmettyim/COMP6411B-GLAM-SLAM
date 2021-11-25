@@ -12,7 +12,7 @@ Some results are illustrates below:
 
 ----
 
-*Running GlAM-SLAM with KITTI-06* 
+*Running GlAM-SLAM with KITTI-06*\
 <img width="386" alt="GLAM-SLAM1" src="https://user-images.githubusercontent.com/17170219/143460689-16814c8b-24eb-4d27-8dbe-a1311fd39acf.png">
 
 ----
