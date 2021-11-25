@@ -13,12 +13,13 @@ Some results are illustrates below:
 <img width="386" alt="GLAM-SLAM1" src="https://user-images.githubusercontent.com/17170219/143460689-16814c8b-24eb-4d27-8dbe-a1311fd39acf.png">
 *Running GlAM-SLAM with KITTI-06* 
 
-<img width="200" alt="KITTI-06 Comparison" src="https://user-images.githubusercontent.com/24664133/143476833-5cbe3f16-421f-44bc-a480-b7f93833fe34.png">
-
-<img width="200" alt="KITTI-06 Comparison - xyz" src="https://user-images.githubusercontent.com/24664133/143476837-c44f2230-4aa4-40f4-853f-64585c1e044f.png">
-<img width="200" alt="KITTI-10 Comparison" src="https://user-images.githubusercontent.com/24664133/143476839-a5d4a326-bfe0-449e-ae1f-a6bc14b6d8ae.png">
-<img width="200" alt="KITTI-10 Comparison - xyz" src="https://user-images.githubusercontent.com/24664133/143476841-415f0b1a-407f-47a4-bcff-dec1073fe2a2.png">
-
+<p float="left">
+<img width="386" alt="KITTI-06 Comparison" src="https://user-images.githubusercontent.com/24664133/143476833-5cbe3f16-421f-44bc-a480-b7f93833fe34.png">
+<img width="386" alt="KITTI-06 Comparison - xyz" src="https://user-images.githubusercontent.com/24664133/143476837-c44f2230-4aa4-40f4-853f-64585c1e044f.png">
+<img width="386" alt="KITTI-10 Comparison" src="https://user-images.githubusercontent.com/24664133/143476839-a5d4a326-bfe0-449e-ae1f-a6bc14b6d8ae.png">
+<img width="386" alt="KITTI-10 Comparison - xyz" src="https://user-images.githubusercontent.com/24664133/143476841-415f0b1a-407f-47a4-bcff-dec1073fe2a2.png">
+</p>
+*KITTI-06 & KITTI-10 ORB-SLAM2 and GLAM-SLAM comparison*
 
 In order to compile the project, one will need to have build an environment for pySLAM to run, please follow the below instructions/refer to orginal repo (see reference belows:
 
