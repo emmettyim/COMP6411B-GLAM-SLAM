@@ -5,7 +5,7 @@ A Hybrid SLAM pipeline with GLAMpoints detector -- based on pySLAM
 
 This project aims at building a hybrid Visual SLAM system with GLAMpoints based on existing SIFT-SLAM using pySLAM. The result of GLAM-SLAM is compared with other modern SLAM methods and the result is satisfactory.
 
-Some results are illustrates below:
+**Some results are illustrates below:**
 
 *GLAMpoints matching with KITTI-00*
 ![match](https://user-images.githubusercontent.com/17170219/143461341-49ee46f6-50d1-4fe6-a8e0-90a502e8b52b.png)
@@ -25,6 +25,7 @@ Some results are illustrates below:
 <img width="386" alt="KITTI-10 Comparison - xyz" src="https://user-images.githubusercontent.com/24664133/143476841-415f0b1a-407f-47a4-bcff-dec1073fe2a2.png">
 </p>
 
+----
 
 In order to compile the project, one will need to have build an environment for pySLAM to run, please follow the below instructions/refer to orginal repo (see reference belows:
 
