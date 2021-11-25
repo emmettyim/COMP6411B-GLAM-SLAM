@@ -1,8 +1,12 @@
 # COMP6411B-LIFT-SLAM
 -----------------------------------
 
-![06ARE](https://user-images.githubusercontent.com/24664133/143466930-0ab6df59-2d64-414c-8d59-6b6947fc080e.png)
-![06Trajectory](https://user-images.githubusercontent.com/24664133/143466951-c5f2443c-909f-4f08-93d5-7e4b34361705.png)
+![06ARE](https://user-images.githubusercontent.com/24664133/143469595-38591378-44e1-4b3a-907f-b0a3b542db96.png)
+![06RPE](https://user-images.githubusercontent.com/24664133/143469602-4c461c97-a12b-45f5-9624-7abb39ac7fe2.png)
+![06Trajectory](https://user-images.githubusercontent.com/24664133/143469606-df9196f6-a8dc-43c4-bb0c-e175c69d2eaf.png)
+![10APE](https://user-images.githubusercontent.com/24664133/143469613-67a37f83-7156-46b4-8ea0-2d605f58a7fb.png)
+![10RPE](https://user-images.githubusercontent.com/24664133/143469617-17b34d9a-b1ac-4ebf-905c-2a113a600f92.png)
+![10Trajectory](https://user-images.githubusercontent.com/24664133/143469620-90924728-9e19-4792-94c9-eb625f15c836.png)
 
 
 ### Directory
