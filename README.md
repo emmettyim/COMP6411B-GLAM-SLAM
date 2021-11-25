@@ -13,10 +13,6 @@
 - KITTI : ```~/Documents/COMP6411B/KITTI```
 - GITHUB: ```~/Documents/GITHUB```
 -----------------------------------
-### Anydesk
-- This Desk : 597970881
-- Password : comp6411b
------------------------------------
 ### Useful Links
 ##### Project details
 - [Project Proposal](https://docs.google.com/document/d/1VT4LuWXs3p1wdCg1wgFVtcjLj78ZTWRq_PWc5E-sGaw/edit)
