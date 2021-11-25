@@ -1,5 +1,10 @@
 # COMP6411B-LIFT-SLAM
 -----------------------------------
+
+![06ARE](https://user-images.githubusercontent.com/24664133/143466930-0ab6df59-2d64-414c-8d59-6b6947fc080e.png)
+![06Trajectory](https://user-images.githubusercontent.com/24664133/143466951-c5f2443c-909f-4f08-93d5-7e4b34361705.png)
+
+
 ### Directory
 - KITTI : ```~/Documents/COMP6411B/KITTI```
 - GITHUB: ```~/Documents/GITHUB```
