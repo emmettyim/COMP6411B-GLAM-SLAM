@@ -1,4 +1,4 @@
-# COMP6411B-LIFT-SLAM
+# COMP6411B-GLAM-SLAM
 -----------------------------------
 
 ![06ARE](https://user-images.githubusercontent.com/24664133/143469595-38591378-44e1-4b3a-907f-b0a3b542db96.png)
