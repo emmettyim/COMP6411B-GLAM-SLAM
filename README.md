@@ -22,6 +22,7 @@
 - [Github:LIFT(tensorflow)](https://github.com/cvlab-epfl/tf-lift)
 - [Github:GLAMpoints_pytorch](https://github.com/PruneTruong/GLAMpoints_pytorch)
 - [Gitlab:GLAMpoints_tf(not optimized)](https://gitlab.com/retinai_sandro/glampoints/-/tree/master)
+- [Github:PySLAM](https://github.com/luigifreda/pyslam)
 ##### Baseline?
 - [Paper :DeepVO](https://arxiv.org/pdf/1709.06841.pdf)
 - [Github:DeepVO](https://github.com/ChiWeiHsiao/DeepVO-pytorch)
