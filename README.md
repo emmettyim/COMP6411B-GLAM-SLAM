@@ -21,22 +21,24 @@ ORB-SLAM2 is run with c++ ORB-SLAM2 pipeline (with relocalization and loop closu
 *KITTI-06 & KITTI-10 ORB-SLAM2 and GLAM-SLAM comparison, TUM-G stands for GLAM-SLAM in TUM style*
 <p float="left">
 <img width="386" alt="KITTI-06 Comparison" src="https://user-images.githubusercontent.com/24664133/143476833-5cbe3f16-421f-44bc-a480-b7f93833fe34.png">
+<img width="386" alt="KITTI-10 Comparison - xyz" src="https://user-images.githubusercontent.com/24664133/143476841-415f0b1a-407f-47a4-bcff-dec1073fe2a2.png">
 <img width="386" alt="KITTI-06 Comparison - xyz" src="https://user-images.githubusercontent.com/24664133/143476837-c44f2230-4aa4-40f4-853f-64585c1e044f.png">
 <img width="386" alt="KITTI-10 Comparison" src="https://user-images.githubusercontent.com/24664133/143476839-a5d4a326-bfe0-449e-ae1f-a6bc14b6d8ae.png">
-<img width="386" alt="KITTI-10 Comparison - xyz" src="https://user-images.githubusercontent.com/24664133/143476841-415f0b1a-407f-47a4-bcff-dec1073fe2a2.png">
+
 </p>
 
 ----
 
 *GLAM-SLAM on KITTI-06 and KITTI-10*
 <p float="left">
-  <img width="386" alt="KITTI-06 ARE" src="https://user-images.githubusercontent.com/24664133/143469595-38591378-44e1-4b3a-907f-b0a3b542db96.png">
-  <img width="386" alt="KITTI-06 RPE" src="https://user-images.githubusercontent.com/24664133/143469602-4c461c97-a12b-45f5-9624-7abb39ac7fe2.png">
   <img width="386" alt="KITTI-06 Tra" src="https://user-images.githubusercontent.com/24664133/143469606-df9196f6-a8dc-43c4-bb0c-e175c69d2eaf.png">
-
-  <img width="386" alt="KITTI-10 ARE" src="https://user-images.githubusercontent.com/24664133/143469613-67a37f83-7156-46b4-8ea0-2d605f58a7fb.png">
-  <img width="386" alt="KITTI-10 RPE" src="https://user-images.githubusercontent.com/24664133/143469617-17b34d9a-b1ac-4ebf-905c-2a113a600f92.png">
   <img width="386" alt="KITTI-10 Tra" src="https://user-images.githubusercontent.com/24664133/143469620-90924728-9e19-4792-94c9-eb625f15c836.png">
+  
+  <img width="386" alt="KITTI-06 ARE" src="https://user-images.githubusercontent.com/24664133/143469595-38591378-44e1-4b3a-907f-b0a3b542db96.png">
+  <img width="386" alt="KITTI-10 ARE" src="https://user-images.githubusercontent.com/24664133/143469613-67a37f83-7156-46b4-8ea0-2d605f58a7fb.png">
+  <img width="386" alt="KITTI-06 RPE" src="https://user-images.githubusercontent.com/24664133/143469602-4c461c97-a12b-45f5-9624-7abb39ac7fe2.png">
+  <img width="386" alt="KITTI-10 RPE" src="https://user-images.githubusercontent.com/24664133/143469617-17b34d9a-b1ac-4ebf-905c-2a113a600f92.png">
+  
 </p>
 
 ----
