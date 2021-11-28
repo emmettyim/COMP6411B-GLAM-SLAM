@@ -6,6 +6,7 @@ A Hybrid SLAM pipeline with GLAMpoints detector -- based on pySLAM
 This project aims at building a hybrid Visual SLAM system with GLAMpoints based on existing SIFT-SLAM using pySLAM. The result of GLAM-SLAM is compared with other modern SLAM methods and the result is satisfactory.
 
 **Some results are illustrates below:**
+ORB-SLAM2 is run with c++ ORB-SLAM2 pipeline (with relocalization and loop closure) while GLAM-SLAM is run with pySLAM(without relocalization and loop closure) 
 
 *GLAMpoints matching with KITTI-00*
 ![match](https://user-images.githubusercontent.com/17170219/143461341-49ee46f6-50d1-4fe6-a8e0-90a502e8b52b.png)
